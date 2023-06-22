@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Task Management - User</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-image: url('bg.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    }
+
+    #logoutButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Task Management - User</h1>
+
+  <table id="taskTable">
+    <thead>
+      <tr>
+        <th>Task ID</th>
+        <th>Task Name</th>
+        <th>Task Description</th>
+        <th>Assigned To</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Hourly Rate</th>
+        <th>Status</th>
+        <th>Completion Time</th>
+        <th>Hours Taken</th>
+        <th>Total Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <button id="logoutButton">Logout</button>
+  <script src="task-management-user.js"></script>
+</body>
+
+</html>

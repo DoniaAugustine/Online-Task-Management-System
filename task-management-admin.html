@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Task Management - Admin</title>
+  <style>
+     /* body {
+      position: relative;
+    } */
+
+    /* #logoutButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    } */
+
+    #logoutButton {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+     #viewTasks {
+       background-color: #d2cfd2;
+      color: #000000;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      /* text-transform: uppercase; */
+      transition: background-color 0.3s ease;
+      display: block;
+      margin: 0 auto; 
+
+    }
+
+    #viewTasks:hover {
+       background-color: #aeabae;
+  
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      /* background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px; */
+      background-image: url('bg.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
+      background-size: cover;
+      /* background-position: center; */
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    form input[type="text"],
+    form textarea,
+    form input[type="email"],
+    form input[type="date"],
+    form input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      margin-bottom: 8px;
+    }
+
+    form button[type="submit"] {
+      background-color: #4CAF50;
+      margin-top: 8px;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      
+    }
+
+    h3 {
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Task Management - Admin</h1>
+
+  <form id="taskForm">
+    <label for="taskId">Task ID:</label>
+    <input type="text" id="taskId" required><br>
+
+    <label for="taskName">Task Name:</label>
+    <input type="text" id="taskName" required><br>
+
+    <label for="taskDescription">Task Description:</label>
+    <input type="text" id="taskDescription" required><br>
+
+    <label for="assignedTo">Assigned To:</label>
+    <input type="email" id="assignedTo" required><br>
+
+    <label for="taskStartDate">Start Date:</label>
+    <input type="date" id="taskStartDate" required><br>
+
+    <label for="taskEndDate">Expected Date of Completion</label>
+    <input type="date" id="taskEndDate" required><br>
+
+    <label for="taskHourlyRate">Hourly Rate:</label>
+    <input type="number" id="taskHourlyRate" required><br>
+
+    <input type="submit" value="Create Task">
+  </form>
+<!-- 
+  <table id="taskTable">
+    <thead>
+      <tr>
+        <th>Task ID</th>
+        <th>Task Name</th>
+        <th>Task Description</th>
+        <th>Assigned To</th>
+        <th>Start Date</th>
+        <th>Expected Date of Completion</th>
+        <th>Status</th>
+        <th>Hourly Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table> -->
+  <button id="viewTasks">View Tasks</button>
+  <button id="logoutButton">Logout</button>
+
+  <script src="task-management-admin.js"></script>
+</body>
+
+</html>
+
