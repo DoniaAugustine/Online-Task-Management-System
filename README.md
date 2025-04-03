@@ -1,0 +1,1 @@
+The Online Task Management System is designed to help users organize, track, and manage their tasks efficiently. This system supports task creation, assignment, tracking, and completion with an intuitive interface.
